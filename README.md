@@ -2,12 +2,12 @@
 An extension for Azure DevOps to view a work item and the chain of all predecessors and successors around it.
 
 
-Project Title: Azure Dev Ops Extension – Dependency Viewer
+## Project Title: Azure Dev Ops Extension – Dependency Viewer
 
-Main Goal:
+## Main Goal:
 •	View the chain of predecessors and successors connected to a selected work item
 
-Desired functionality:
+## Desired functionality:
 •	From any selected work item (on backlog, sprints, etc.), the ellipsis context menu will have a new menu item “View Dependencies”
 •	Opens a popup window to show the map
 •	Searches recursively for items that are linked by way of predecessor/successor
@@ -15,7 +15,7 @@ Desired functionality:
 •	Each node is clickable to be opened
 •	Ability to export map as image
 
-Development roadmap:
+## Development roadmap:
 •	Get a new menu item added to a work item’s ellipsis
 •	On menu item click, pop open a window
 •	Draw a node representing the selected item
