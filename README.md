@@ -1,8 +1,7 @@
 # AzureDevOps-Extension---Dependencies
 An extension for Azure DevOps to view a work item and the chain of all predecessors and successors around it.
 
-
-## Project Title: Azure Dev Ops Extension – Dependency Viewer
+Trello Board: https://trello.com/b/82AuVaL4
 
 ## Main Goal:
 •	View the chain of predecessors and successors connected to a selected work item
