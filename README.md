@@ -26,7 +26,9 @@ An extension for Azure DevOps to view a work item and the chain of all predecess
 
 •	On menu item click, pop open a window
 
-•	Draw a node representing the selected item
+•	Draw a node representing the selected item, with basic info shown
+
+•	Navigate back to the item from the drawn node
 
 •	Query for predecessors and successors
 
