@@ -29,12 +29,13 @@
             var gitClient = Service.getClient(GitWebApi.GitHttpClient);
 
             // create node container control...
-            myControl = Controls.create(typeOFControl, $("#main-container"), {properties...});
+            //myControl = Controls.create(typeOFControl, $("#main-container"), {properties...});
 
             // apply the details to myControl (UI)
-            gitClient.<VSSgetItemDetails?>().then(function (Details) {
-                myControl.SetContent(Details)...;
-            });
+            //gitClient.<VSSgetItemDetails?>().then(function (Details) { myControl.SetContent(Details)...; });
+
+            document.getElementById("name").innerText = VSS.getWebContext().user.name;
+            
         })();
         
         VSS.register("load-map-form", loadMapForm);
