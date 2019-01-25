@@ -11,10 +11,36 @@
         }
     </style>
     <script type="text/javascript">
-        VSS.init();
-        VSS.ready(function() {
-            document.getElementById("name").innerText = VSS.getWebContext().user.name;
-        });
+        
+    VSS.init({
+        explicitNotifyLoaded: true,
+        usePlatformScripts: true
+    });
+        
+    VSS.require([
+        "VSS/Service",
+        "VSS/Controls",
+        "TFS/VersionControl/GitRestClient"], 
+        function (Service, Controls, GitWebApi) {
+        
+        var loadMapForm = (function() {
+                        
+            // get work item details...
+            var gitClient = Service.getClient(GitWebApi.GitHttpClient);
+
+            // create node container control...
+            myControl = Controls.create(typeOFControl, $("#main-container"), {properties...});
+
+            // apply the details to myControl (UI)
+            gitClient.<VSSgetItemDetails?>().then(function (Details) {
+                myControl.SetContent(Details)...;
+            });
+        })();
+        
+        VSS.register("load-map-form", loadMapForm);
+        VSS.notifyLoadSucceeded();
+    });
+        
     </script>
 </head>
 <body>
